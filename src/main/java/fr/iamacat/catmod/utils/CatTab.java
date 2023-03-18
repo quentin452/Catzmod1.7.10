@@ -16,6 +16,6 @@ public class CatTab extends CreativeTabs {
 
     @Override
     public String getTranslatedTabLabel() {
-        return "CatMod"; // change this to the desired name of the creative tab
+        return "§4CatMod"; // change this to the desired name of the creative tab // minecraft code colors : https://minecraft.fr/faq/code-couleur-minecraft/
     }
 }
