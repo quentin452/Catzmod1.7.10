@@ -1,37 +1,21 @@
-# anatawa12's ForgeGradle 1.2 fork for Gradle 4.4.1+ - example project
+This mod adds an item to your Minecraft world called CatCoin. This coin can be used to craft various items, adding a new layer of depth to your gameplay experience. With CatCoin, you can craft items such as weapons, armor, tools, food, and more. It adds an extra layer of challenge and complexity to your modpack, and gives you the opportunity to make use of your creativity. With CatCoin, you can craft items faster, more efficiently, and more effectively, making it easier to build whatever you need. Furthermore, it adds a sense of accomplishment when you complete a crafting task, as you can show off the results of your efforts with your friends. CatCoin adds a unique element to your modpack, providing a way to make crafting more rewarding and enjoyable. With its simple and intuitive user interface, CatCoin makes crafting easier and more enjoyable for everyone.
 
-This is an example mod using the [fork of ForgeGradle-1.2 made by anatawa12](https://github.com/anatawa12/ForgeGradle-1.2).
-This fork supports Gradle 4.4.1 and later. This example project uses Gradle 5.6.4.
+- A Question and Answer .
 
-## How to use this example project
+Q: Can I use this mod in my modpack?
+A: Yes, you can.
 
-You can download this example project from [here](https://github.com/anatawa12/ForgeGradle-example/archive/master.zip), or use it as a template on Github.
-This project can be used as a replacement for Forge's 1.7.10 MDK.
+Q: What features does this mod offer?
+A: This mod offers the ability to craft items using a new currency called CatCoin. This adds an additional level of complexity to the crafting system, allowing users to create more interesting and unique items. Additionally, this mod provides a way to store and manage CatCoin, allowing players to build up their wealth and make larger purchases.
 
-## How to replace ForgeGradle 1.2. with anatawa12's fork
-Although this example project has some differences to Forge's 1.7.10 MDK, anatawa12's fork of ForgeGradle 1.2 can be used by most projects with only minimal changes to their Gradle build script.
+- How those features affect a user's experience.
 
-Here is a list of changes to Forge's 1.7.10 MDK Gradle build script, to replace the official ForgeGradle 1.2 plugin with the fork. These changes are likely to work with most projects based on Forge's 1.7.10 MDK.
+This mod provides an additional item for the user to craft and utilize in their modpack. The CatCoin item can be used to create unique items, giving the user a greater range of potential options when it comes to creating and customizing their modpack experience. By adding this item, players are given the ability to craft items that they may not have been able to make before, creating a more dynamic and enjoyable experience.
 
-In the repositories block of the buildscript section, add jcenter, and switch the Forge maven to use HTTPS instead of HTTP:
-```diff
-     repositories {
-         mavenCentral()
-         maven {
-             name = "forge"
--            url = "http://files.minecraftforge.net/maven"
-+            url = "https://maven.minecraftforge.net/"
-         }
-```
+- Links to descriptions of my projects.
 
-Also in the dependencies block of the buildscript section, change the dependency on Forge's official ForgeGradle 1.2 to the fork:
-```diff
-     dependencies {
--        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-+        classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.0.+') {
-+            changing = true
-+        }
-     }
-```
+Modrinth: [https://modrinth.com/mod/catzmod/version/0.1]("Modrinth")
 
-The Gradle wrapper should also be changed to use Gradle 4.4.1 or higher. <!--Currently, the plugin [does not support Gradle 6.x](https://github.com/anatawa12/ForgeGradle-1.2/issues/9), although this may change in the future. As such, the latest version of Gradle this plugin supports is Gradle 5.6.4.-->
+Github: [https://github.com/quentin452/Catzmod1.7.10]("Github")
+
+Curseforge: [https://www.curseforge.com/minecraft/mc-mods/catzmod]("Curseforge")
