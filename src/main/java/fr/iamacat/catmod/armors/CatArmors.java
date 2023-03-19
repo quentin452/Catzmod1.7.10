@@ -7,8 +7,8 @@ import net.minecraft.entity.Entity;
 
 public class CatArmors extends ItemArmor {
 
-    public CatArmors(ArmorMaterial armorMaterial, int renderIndex, int armorType) {
-        super(armorMaterial, renderIndex, armorType);
+    public CatArmors(ArmorMaterial material, int renderIndex, int armorType) {
+        super(material, renderIndex, armorType);
     }
 
     // set the texture path for the armor layers
@@ -16,8 +16,7 @@ public class CatArmors extends ItemArmor {
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if (this.armorType == 2) {
             return Reference.MOD_ID + ":textures/models/armor/cat_layer_2.png";
-        } else {
-            return Reference.MOD_ID + ":textures/models/armor/cat_layer_1.png";
         }
+            return Reference.MOD_ID + ":textures/models/armor/cat_layer_1.png";
     }
 }
