@@ -21,14 +21,14 @@ public class RegisterBlocks {
         GameRegistry.registerBlock(catBlock, catBlock.getUnlocalizedName().substring(1));
         GameRegistry.addRecipe(new ItemStack(catBlock, 1),
                 "OOO",
-                "OOO",
-                "OOO",
+                        "OOO",
+                        "OOO",
                 'O', RegisterBlocks.catBlock);
         GameRegistry.registerBlock(catTorch, catTorch.getUnlocalizedName().substring(5));
         GameRegistry.addRecipe(new ItemStack(catTorch, 1),
                 "   ",
-                " O ",
-                " L ",
+                        " O ",
+                        " L ",
                 'L', Items.stick,
                 'O', RegisterItems.catCoin);
     }

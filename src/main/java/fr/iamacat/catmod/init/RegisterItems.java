@@ -64,49 +64,49 @@ public class RegisterItems {
         GameRegistry.registerItem(catSword,"catSword");
         GameRegistry.addRecipe(new ItemStack(catSword ,1),//Shaped recipe
                 " O ",
-                " O ",
-                " L ",
+                        " O ",
+                        " L ",
                 'L', Items.stick,
                 'O', RegisterItems.catCoin);
 
         GameRegistry.registerItem(catPickaxe,"catPickaxe");
         GameRegistry.addRecipe(new ItemStack(catPickaxe ,1),
                 "GGG",
-                " L ",
-                " L ",
+                        " L ",
+                        " L ",
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
         GameRegistry.registerItem(catShovel,"catShovel");
         GameRegistry.addRecipe(new ItemStack(catShovel ,1),
                 " G ",
-                " L ",
-                " L ",
+                        " L ",
+                        " L ",
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
         GameRegistry.registerItem(catHoe,"catHoe");
         GameRegistry.addRecipe(new ItemStack(catHoe ,1),
                 " GG",
-                " L ",
-                " L ",
+                        " L ",
+                        " L ",
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
         GameRegistry.addRecipe(new ItemStack(catHoe ,1), // on onother side
                 "GG ",
-                " L ",
-                " L ",
+                        " L ",
+                        " L ",
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
         GameRegistry.registerItem(catAxe,"catAxe");
         GameRegistry.addRecipe(new ItemStack(catAxe ,1),
                 " GG",
-                " LG",
-                " L ",
+                        " LG",
+                        " L ",
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
         GameRegistry.addRecipe(new ItemStack(catAxe ,1), // on onother side
                 "GG ",
-                "GL ",
-                " L ",
+                        "GL ",
+                        " L ",
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
 
@@ -123,32 +123,32 @@ public class RegisterItems {
         GameRegistry.registerItem(cat_helmet,"cat_helmet");
         GameRegistry.addRecipe(new ItemStack(cat_helmet ,1),
                 "GGG",
-                "G G",
-                "H H",
+                        "G G",
+                        "H H",
                 'G', RegisterItems.catCoin,
                 'H', RegisterItems.catStick);
 // Cat Chestplate
         GameRegistry.registerItem(cat_chestplate,"cat_chestplate");
         GameRegistry.addRecipe(new ItemStack(cat_chestplate ,1),
                 "GHG",
-                "GGG",
-                "GGG",
+                        "GGG",
+                        "GGG",
                 'G', RegisterItems.catCoin,
                 'H', RegisterItems.catStick);
 // Cat Leggings
         GameRegistry.registerItem(cat_leggings,"cat_leggings");
         GameRegistry.addRecipe(new ItemStack(cat_leggings ,1),
                 "GGG",
-                "GHG",
-                "GHG",
+                        "GHG",
+                        "GHG",
                 'G', RegisterItems.catCoin,
                 'H', RegisterItems.catStick);
 // Cat Boots
         GameRegistry.registerItem(cat_boots,"cat_boots");
         GameRegistry.addRecipe(new ItemStack(cat_boots ,1),
                 "H H",
-                "G G",
-                "G G",
+                        "G G",
+                        "G G",
                 'G', RegisterItems.catCoin,
                 'H', RegisterItems.catStick);
         }
