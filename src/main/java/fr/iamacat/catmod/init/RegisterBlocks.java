@@ -12,6 +12,8 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
+import static fr.iamacat.catmod.init.RegisterItems.catIngot;
+
 public class RegisterBlocks {
     public static Block catBlock,catTorch;//blocks
     public static Block catOre;//ores
@@ -36,7 +38,7 @@ public class RegisterBlocks {
                 "OOO",
                         "OOO",
                         "OOO",
-                'O', RegisterItems.catIngot);
+                'O', catIngot);
         GameRegistry.registerBlock(catTorch, catTorch.getUnlocalizedName().substring(5));
         GameRegistry.addRecipe(new ItemStack(catTorch, 1),
                 "   ",
@@ -44,7 +46,10 @@ public class RegisterBlocks {
                         " L ",
                 'L', Items.stick,
                 'O', RegisterItems.catCoin);
+        ItemStack catIngotStack = new ItemStack(catIngot);
         GameRegistry.registerBlock(catOre, catOre.getUnlocalizedName().substring(5));
         OreDictionary.registerOre("oreCat", new ItemStack(catOre));
+        // Smelting recipe for catIngot
+        GameRegistry.addSmelting(RegisterBlocks.catOre, catIngotStack, 0.7f);
     }
 }

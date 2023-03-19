@@ -13,6 +13,9 @@ import java.util.Random;
 public class CatOre extends Block {
     public CatOre() {
         super(Material.rock);
+        this.setHardness(2.0F);//resistance to pickaxe
+        this.setResistance(15.0F);//resistance to tnt
+        this.setHarvestLevel("pickaxe",3);
     }
 
     @Override

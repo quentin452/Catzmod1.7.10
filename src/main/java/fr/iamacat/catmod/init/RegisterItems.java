@@ -5,7 +5,6 @@ import fr.iamacat.catmod.armors.CatArmors;
 import fr.iamacat.catmod.items.CatCoin;
 import fr.iamacat.catmod.tools.*;
 import fr.iamacat.catmod.utils.Reference;
-import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -13,7 +12,6 @@ import fr.iamacat.catmod.Catmod;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.oredict.OreDictionary;
 
 
 public class RegisterItems {
@@ -108,10 +106,6 @@ public class RegisterItems {
                         " L ",
                 'L', Items.stick,
                 'O', RegisterItems.catCoin);
-        ItemStack catIngotStack = new ItemStack(catIngot);
-        GameRegistry.registerItem(catIngot,"catIngot");
-        // Smelting recipe for catIngot
-        GameRegistry.addSmelting(RegisterBlocks.catOre, catIngotStack, 0.7f);
 
         GameRegistry.registerItem(catPickaxe,"catPickaxe");
         GameRegistry.addRecipe(new ItemStack(catPickaxe ,1),
@@ -195,5 +189,6 @@ public class RegisterItems {
                         "G G",
                 'G', RegisterItems.catCoin,
                 'H', RegisterItems.catStick);
+        GameRegistry.registerItem(catIngot, "catIngot");
         }
     }
