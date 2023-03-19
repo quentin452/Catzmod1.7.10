@@ -94,21 +94,29 @@ public class RegisterItems {
             // Shapeless crafting recipe for catCoin
             ItemStack itemTable = new ItemStack(catCoin);
             GameRegistry.addShapelessRecipe(itemTable,//Shapeless recipe
-                    Items.nether_star,
-                    Blocks.dragon_egg,
-                Blocks.end_portal_frame,
-                Blocks.end_portal_frame,
-                Blocks.end_portal_frame);
+                    Blocks.dragon_egg);
         GameRegistry.addSmelting(Blocks.bedrock, itemTable,  0.5f);
 
         //Kit tools
 
         GameRegistry.registerItem(catSword,"catSword");
         GameRegistry.addRecipe(new ItemStack(catSword ,1),//Shaped recipe
+                "O  ",
+                "O  ",
+                "L  ",
+                'L', RegisterItems.catStick,
+                'O', RegisterItems.catCoin);
+        GameRegistry.addRecipe(new ItemStack(catSword ,1),//Shaped recipe
                 " O ",
                         " O ",
                         " L ",
                 'L', Items.stick,
+                'O', RegisterItems.catCoin);
+        GameRegistry.addRecipe(new ItemStack(catSword ,1),//Shaped recipe
+                "  O",
+                "  O",
+                "  L",
+                'L', RegisterItems.catStick,
                 'O', RegisterItems.catCoin);
 
         GameRegistry.registerItem(catPickaxe,"catPickaxe");
@@ -119,12 +127,26 @@ public class RegisterItems {
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
         GameRegistry.registerItem(catShovel,"catShovel");
+        // cat shovel recepie
+        GameRegistry.addRecipe(new ItemStack(catShovel ,1),//Shaped recipe
+                "O  ",
+                "L  ",
+                "L  ",
+                'L', RegisterItems.catStick,
+                'O', RegisterItems.catCoin);
+
         GameRegistry.addRecipe(new ItemStack(catShovel ,1),
                 " G ",
                         " L ",
                         " L ",
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
+        GameRegistry.addRecipe(new ItemStack(catShovel ,1),//Shaped recipe
+                "  O",
+                "  L",
+                "  L",
+                'L', RegisterItems.catStick,
+                'O', RegisterItems.catCoin);
         GameRegistry.registerItem(catHoe,"catHoe");
         GameRegistry.addRecipe(new ItemStack(catHoe ,1),
                 " GG",
@@ -224,11 +246,13 @@ public class RegisterItems {
                 'H', RegisterItems.catStick);
         GameRegistry.registerItem(catIngot, "catIngot");
 
-        // Shapeless crafting recipe for catCoin
-        GameRegistry.addShapelessRecipe(itemTable,
-                Items.gunpowder,
-                catIngot,
-                catIngot);
+        GameRegistry.addRecipe(new ItemStack(catGunpowder ,1),
+                " G ",
+                "GKG",
+                " G",
+                'G', RegisterItems.catCoin,
+                'K', RegisterItems.catGunpowder);
         GameRegistry.registerItem(catGunpowder,"catGunpowder");
+
         }
     }

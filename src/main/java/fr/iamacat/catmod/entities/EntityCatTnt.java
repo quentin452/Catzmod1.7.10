@@ -2,8 +2,11 @@ package fr.iamacat.catmod.entities;
 
 import cpw.mods.fml.common.registry.EntityRegistry;
 import fr.iamacat.catmod.Catmod;
+import fr.iamacat.catmod.blocks.CatTnt;
+import fr.iamacat.catmod.utils.Reference;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityTNTPrimed;
+import net.minecraft.item.Item;
 import net.minecraft.world.World;
 
 public class EntityCatTnt extends EntityTNTPrimed {
@@ -28,6 +31,8 @@ public class EntityCatTnt extends EntityTNTPrimed {
 
         public void registerEntity() {
             EntityRegistry.registerGlobalEntityID(EntityCatTnt.class, "EntityCatTnt", EntityRegistry.findGlobalUniqueEntityId());
+
+
         }
     }
 
