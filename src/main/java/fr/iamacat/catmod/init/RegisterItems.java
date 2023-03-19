@@ -17,7 +17,7 @@ import net.minecraftforge.common.util.EnumHelper;
 public class RegisterItems {
 
     //items
-    public static Item catCoin,catStick,catIngot;
+    public static Item catCoin,catStick,catIngot,catGunpowder;
     //tools
     public static Item catSword,catHoe,catPickaxe,catShovel,catAxe;
     //armor
@@ -41,6 +41,10 @@ public class RegisterItems {
                     .setUnlocalizedName("catIngot")
                     .setCreativeTab(Catmod.catTab)
                     .setTextureName(Reference.MOD_ID + ":cat_ingot");
+            catGunpowder = new Item()
+                    .setUnlocalizedName("catGunpowder")
+                    .setCreativeTab(Catmod.catTab)
+                    .setTextureName(Reference.MOD_ID + ":catGunpowder");
 
             //Kit Armors
             cat_helmet = new CatArmors(CAT_ARMOR_MATERIAL,0,0)
@@ -190,5 +194,13 @@ public class RegisterItems {
                 'G', RegisterItems.catCoin,
                 'H', RegisterItems.catStick);
         GameRegistry.registerItem(catIngot, "catIngot");
+        GameRegistry.registerItem(catCoin,"catCoin");
+
+        // Shapeless crafting recipe for catCoin
+        GameRegistry.addShapelessRecipe(itemTable,
+                Items.gunpowder,
+                catIngot,
+                catIngot);
+        GameRegistry.registerItem(catGunpowder,"catGunpowder");
         }
     }

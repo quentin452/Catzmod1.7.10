@@ -1,10 +1,7 @@
 package fr.iamacat.catmod.blocks;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import fr.iamacat.catmod.items.CatIngot;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class CatBlock extends Block {
 
@@ -18,11 +15,3 @@ public class CatBlock extends Block {
         // this.setBlockUnbreakable();//make the block unbreakable
     }
 }
-
-//todo
-  //  public void preInit() {
-   //  CatBlock = new CatOre();
-    //    GameRegistry.registerBlock(CatBlock, CatIngot.class, "CatBlock");
-   //     CatIngot = new CatIngot(CatBlock);
-   //     GameRegistry.registerItem(CatIngot, "CatIngot");
-   //     OreDictionary.registerOre("CatOre", CatBlock);
