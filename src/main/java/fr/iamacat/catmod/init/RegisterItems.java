@@ -175,41 +175,9 @@ public class RegisterItems {
                 'G', RegisterItems.catCoin);
 
         GameRegistry.registerItem(catStick,"catStick");
-        GameRegistry.addRecipe(new ItemStack(catStick ,2),
-                "G  ",
-                "G  ",
-                "   ",
-                'G', RegisterItems.catCoin);
-
-        GameRegistry.addRecipe(new ItemStack(catStick ,2),
-                "   ",
-                "G  ",
-                "G  ",
-                'G', RegisterItems.catCoin);
-
-        GameRegistry.addRecipe(new ItemStack(catStick ,2),
-                " G ",
-                " G ",
-                "   ",
-                'G', RegisterItems.catCoin);
-
-        GameRegistry.addRecipe(new ItemStack(catStick ,2),
-                "   ",
-                " G ",
-                " G ",
-                'G', RegisterItems.catCoin);
-
-        GameRegistry.addRecipe(new ItemStack(catStick ,2),
-                "  G",
-                "  G",
-                "   ",
-                'G', RegisterItems.catCoin);
-
-        GameRegistry.addRecipe(new ItemStack(catStick ,2),
-                "   ",
-                "  G",
-                "  G",
-                'G', RegisterItems.catCoin);
+        GameRegistry.addShapelessRecipe(new ItemStack(catStick ,2),
+                RegisterItems.catCoin,
+                RegisterItems.catCoin);
 
         //Kit Armors
 // Cat Helmet
@@ -217,41 +185,36 @@ public class RegisterItems {
         GameRegistry.addRecipe(new ItemStack(cat_helmet ,1),
                 "GGG",
                         "G G",
-                        "H H",
-                'G', RegisterItems.catCoin,
-                'H', RegisterItems.catStick);
+                        "   ",
+                'G', RegisterItems.catCoin);
 // Cat Chestplate
         GameRegistry.registerItem(cat_chestplate,"cat_chestplate");
         GameRegistry.addRecipe(new ItemStack(cat_chestplate ,1),
-                "GHG",
+                "G G",
                         "GGG",
                         "GGG",
-                'G', RegisterItems.catCoin,
-                'H', RegisterItems.catStick);
+                'G', RegisterItems.catCoin);
 // Cat Leggings
         GameRegistry.registerItem(cat_leggings,"cat_leggings");
         GameRegistry.addRecipe(new ItemStack(cat_leggings ,1),
                 "GGG",
-                        "GHG",
-                        "GHG",
-                'G', RegisterItems.catCoin,
-                'H', RegisterItems.catStick);
+                        "G G",
+                        "G G",
+                'G', RegisterItems.catCoin);
 // Cat Boots
         GameRegistry.registerItem(cat_boots,"cat_boots");
         GameRegistry.addRecipe(new ItemStack(cat_boots ,1),
-                "H H",
+                "   ",
                         "G G",
                         "G G",
-                'G', RegisterItems.catCoin,
-                'H', RegisterItems.catStick);
+                'G', RegisterItems.catCoin);
         GameRegistry.registerItem(catIngot, "catIngot");
 
         GameRegistry.addRecipe(new ItemStack(catGunpowder ,1),
                 " G ",
-                "GKG",
+                "G G",
                 " G",
-                'G', RegisterItems.catCoin,
-                'K', RegisterItems.catGunpowder);
+                'G', RegisterItems.catCoin);
         GameRegistry.registerItem(catGunpowder,"catGunpowder");
 
         }

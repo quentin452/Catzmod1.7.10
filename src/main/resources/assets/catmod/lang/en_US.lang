@@ -16,6 +16,6 @@ item.catGunpowder.name=Cat Gunpowder
 tile.catBlock.name=§4Cat Block
 tile.catBlock.tooltip"=It's just a block!
 tile.catTorch.name=§4Cat Torch
-tile.catBlock.tooltip"=It's just a torch!
+tile.catTorch.tooltip"=It's just a torch!
 tile.catOre.name=Cat Ore
 tile.catTnt.name=Cat Tnt

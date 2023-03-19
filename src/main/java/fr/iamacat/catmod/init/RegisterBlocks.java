@@ -1,5 +1,6 @@
 package fr.iamacat.catmod.init;
 
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -12,6 +13,7 @@ import fr.iamacat.catmod.entities.EntityCatTnt;
 import fr.iamacat.catmod.utils.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
@@ -37,7 +39,7 @@ public class RegisterBlocks {
              .setBlockName("catOre")
              .setCreativeTab(Catmod.catTab)
              .setBlockTextureName(Reference.MOD_ID + ":cat_ore");
-     catTnt = new CatTnt(Material.tnt)
+        catTnt = new CatTnt()
                 .setCreativeTab(Catmod.catTab)
                 .setBlockName("catTnt");
         }
