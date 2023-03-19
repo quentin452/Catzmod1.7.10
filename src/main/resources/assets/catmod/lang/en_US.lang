@@ -1,12 +1,15 @@
 item.catCoin.name=§4Cat Coin
 item.catCoin.tooltip=It's just a coin!
 item.catStick.name=Cat Stick
-
-tile.catBlock.name=§4Cat Block
-tile.catBlock.tooltip"=It's just a catblock!
-
 item.catSword.name=Cat Sword
 item.catAxe.name=Cat Axe
 item.catHoe.name=Cat Hoe
 item.catPickaxe.name=Cat Pickaxe
 item.catShovel.name=Cat Shovel
+item.cat_boots.name=Cat boots
+item.cat_chestplate.name=Cat Chestplate
+item.cat_helmet.name=Cat Helmet
+item.cat_leggings.name=Cat Leggings
+
+tile.catBlock.name=§4Cat Block
+tile.catBlock.tooltip"=It's just a catblock!
