@@ -21,3 +21,19 @@ Modrinth: [https://modrinth.com/mod/catzmod/version/0.1]("Modrinth")
 Github: [https://github.com/quentin452/Catzmod1.7.10]("Github")
 
 Curseforge: [https://www.curseforge.com/minecraft/mc-mods/catzmod]("Curseforge")
+
+TODO : 
+
+add a cat dimension
+add a cat entity
+and a cat biome
+add a music 
+add tools 
+add armors
+make worldgen cat ore
+make cat structure worldgen
+make a gun/ammunation
+make doors/trapdoors
+make vines/leaves/tree
+make a villager/personalized trades
+make a config file
