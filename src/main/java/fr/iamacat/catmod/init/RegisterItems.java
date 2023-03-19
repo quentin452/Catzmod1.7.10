@@ -153,12 +153,41 @@ public class RegisterItems {
                 'G', RegisterItems.catCoin);
 
         GameRegistry.registerItem(catStick,"catStick");
+        GameRegistry.addRecipe(new ItemStack(catStick ,2),
+                "G  ",
+                "G  ",
+                "   ",
+                'G', RegisterItems.catCoin);
 
-        // Shapeless crafting recipe for catCoin
-        ItemStack itemCatStick = new ItemStack(catStick);
-        GameRegistry.addShapelessRecipe(itemCatStick,
-                RegisterItems.catCoin,
-                RegisterItems.catCoin);
+        GameRegistry.addRecipe(new ItemStack(catStick ,2),
+                "   ",
+                "G  ",
+                "G  ",
+                'G', RegisterItems.catCoin);
+
+        GameRegistry.addRecipe(new ItemStack(catStick ,2),
+                " G ",
+                " G ",
+                "   ",
+                'G', RegisterItems.catCoin);
+
+        GameRegistry.addRecipe(new ItemStack(catStick ,2),
+                "   ",
+                " G ",
+                " G ",
+                'G', RegisterItems.catCoin);
+
+        GameRegistry.addRecipe(new ItemStack(catStick ,2),
+                "  G",
+                "  G",
+                "   ",
+                'G', RegisterItems.catCoin);
+
+        GameRegistry.addRecipe(new ItemStack(catStick ,2),
+                "   ",
+                "  G",
+                "  G",
+                'G', RegisterItems.catCoin);
 
         //Kit Armors
 // Cat Helmet
@@ -194,7 +223,6 @@ public class RegisterItems {
                 'G', RegisterItems.catCoin,
                 'H', RegisterItems.catStick);
         GameRegistry.registerItem(catIngot, "catIngot");
-        GameRegistry.registerItem(catCoin,"catCoin");
 
         // Shapeless crafting recipe for catCoin
         GameRegistry.addShapelessRecipe(itemTable,
