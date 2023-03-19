@@ -37,5 +37,6 @@ TODO :
 * make vines/leaves/tree
 * make a villager/personalized trades
 * make a config file
+* add command to summon my entities
 
 * fix tooltips are doesn't work
