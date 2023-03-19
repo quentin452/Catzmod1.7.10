@@ -8,4 +8,5 @@ public class CatPickaxe extends ItemPickaxe {
         super(p_i45347_1_);
     }
 }
+
 // don't touch anything

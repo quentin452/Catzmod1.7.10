@@ -22,10 +22,10 @@ public class RegisterItems {
     //armor
     public static Item cat_boots,cat_chestplate,cat_helmet,cat_leggings;
 
-    public static Item.ToolMaterial CAT_TOOLS_MATERIAL = EnumHelper.addToolMaterial("CAT_TOOLS_MATERIAL", 2,2000,6.0F,6.0F,30);
+    public static Item.ToolMaterial CAT_TOOLS_MATERIAL = EnumHelper.addToolMaterial("CAT_TOOLS_MATERIAL", 3,2000,6.0F,6.0F,30);
     public static ItemArmor.ArmorMaterial CAT_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("CAT_ARMOR_MATERIAL", 2000, new int[]{2, 7, 5, 3}, 30);
 
-        public static void init() {
+    public static void init() {
             catCoin = new Item().setUnlocalizedName("catCoin").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catCoin");
             catStick = new Item().setUnlocalizedName("catStick").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catStick");
 
@@ -49,7 +49,7 @@ public class RegisterItems {
 
             // Shapeless crafting recipe for catCoin
             ItemStack itemTable = new ItemStack(catCoin);
-            GameRegistry.addShapelessRecipe(itemTable,
+            GameRegistry.addShapelessRecipe(itemTable,//Shapeless recipe
                     Items.nether_star,
                     Blocks.dragon_egg,
                 Blocks.end_portal_frame,
@@ -62,7 +62,7 @@ public class RegisterItems {
         //Kit tools
 
         GameRegistry.registerItem(catSword,"catSword");
-        GameRegistry.addRecipe(new ItemStack(catSword ,1),
+        GameRegistry.addRecipe(new ItemStack(catSword ,1),//Shaped recipe
                 " O ",
                 " O ",
                 " L ",
