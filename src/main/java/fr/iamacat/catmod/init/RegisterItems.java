@@ -2,6 +2,7 @@ package fr.iamacat.catmod.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.iamacat.catmod.armors.CatArmors;
+import fr.iamacat.catmod.items.CatCoin;
 import fr.iamacat.catmod.tools.*;
 import fr.iamacat.catmod.utils.Reference;
 import net.minecraft.init.Blocks;
@@ -26,7 +27,7 @@ public class RegisterItems {
     public static ItemArmor.ArmorMaterial CAT_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("CAT_ARMOR_MATERIAL", 2000, new int[]{2, 7, 5, 3}, 30);
 
     public static void init() {
-            catCoin = new Item().setUnlocalizedName("catCoin").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catCoin");
+            catCoin = new CatCoin().setUnlocalizedName("catCoin").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catCoin");
             catStick = new Item().setUnlocalizedName("catStick").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catStick");
 
             //Kit Armors
