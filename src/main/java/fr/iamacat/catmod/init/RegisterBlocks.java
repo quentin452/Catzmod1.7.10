@@ -37,7 +37,7 @@ public class RegisterBlocks {
              .setBlockName("catOre")
              .setCreativeTab(Catmod.catTab)
              .setBlockTextureName(Reference.MOD_ID + ":cat_ore");
-        catTnt = new CatTnt(Material.tnt)
+     catTnt = new CatTnt(Material.tnt)
                 .setCreativeTab(Catmod.catTab)
                 .setBlockName("catTnt");
         }
@@ -62,10 +62,7 @@ public class RegisterBlocks {
         // Smelting recipe for catIngot
         GameRegistry.addSmelting(RegisterBlocks.catOre, catIngotStack, 0.7f);
 
-        int entityID = EntityRegistry.findGlobalUniqueEntityId();
-        EntityRegistry.registerGlobalEntityID(EntityCatTnt.class, "EntityCatTnt", entityID);
-        EntityRegistry.registerModEntity(EntityCatTnt.class, "EntityCatTnt", entityID, Catmod.instance, 64, 10, true);
-
+        GameRegistry.registerBlock(catTnt, catTnt.getUnlocalizedName().substring(5));
         GameRegistry.addRecipe(new ItemStack(catTnt, 2),
                 "LWL",
                 "OGO",
@@ -77,3 +74,5 @@ public class RegisterBlocks {
         LanguageRegistry.instance().addStringLocalization("entity.catTNT.name", "Cat TNT");
     }
 }
+
+

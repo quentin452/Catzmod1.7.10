@@ -19,7 +19,6 @@ public class CatTnt extends BlockTNT {
 
     public CatTnt(Material tnt) {
         super();
-        this.setBlockTextureName(Reference.MOD_ID + ":catTnt");
         this.setHardness(2.0F);//resistance to pickaxe
         this.setResistance(15.0F);//resistance to tnt
     }
