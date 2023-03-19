@@ -24,16 +24,16 @@ Curseforge: [https://www.curseforge.com/minecraft/mc-mods/catzmod]("Curseforge")
 
 TODO : 
 
-add a cat dimension
-add a cat entity
-and a cat biome
-add a music 
-add tools 
-add armors
-make worldgen cat ore
-make cat structure worldgen
-make a gun/ammunation
-make doors/trapdoors
-make vines/leaves/tree
-make a villager/personalized trades
-make a config file
+* add a cat dimension
+* add a cat entity
+* and a cat biome
+* add a music 
+* add tools 
+* add armors
+* make worldgen cat ore
+* make cat structure worldgen
+* make a gun/ammunation
+* make doors/trapdoors
+* make vines/leaves/tree
+* make a villager/personalized trades
+* make a config file
