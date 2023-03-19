@@ -37,5 +37,6 @@ TODO :
 * add command to summon my entities
 * add summon eggs
 * fix tooltips are doesn't work
+* add tnt(models using blockbench or something)
 
 Some of theses description is by SkyDash #4150
