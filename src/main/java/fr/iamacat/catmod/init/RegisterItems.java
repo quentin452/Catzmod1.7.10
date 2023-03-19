@@ -16,12 +16,13 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class RegisterItems {
 
-    public static Item catCoin;
+    public static Item catCoin,catStick;
     public static Item catSword,catHoe,catPickaxe,catShovel,catAxe;
 
 public static Item.ToolMaterial Cattools = EnumHelper.addToolMaterial("Cattools", 2,2000,6.0F,6.0F,30);
     public static void init() {
         catCoin = new Item().setUnlocalizedName("catCoin").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catCoin");
+        catStick = new Item().setUnlocalizedName("catStick").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catStick");
 
         //Kit tools
         catSword = new CatSword(Cattools).setUnlocalizedName("catSword").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catSword");
@@ -98,6 +99,14 @@ public static Item.ToolMaterial Cattools = EnumHelper.addToolMaterial("Cattools"
                 " L ",
                 'L', Items.stick,
                 'G', RegisterItems.catCoin);
+
+        GameRegistry.registerItem(catStick,"catStick");
+
+        // Shapeless crafting recipe for catCoin
+        ItemStack itemCatStick = new ItemStack(catStick);
+        GameRegistry.addShapelessRecipe(itemCatStick,
+                RegisterItems.catCoin,
+                RegisterItems.catCoin);
 
     }
 }

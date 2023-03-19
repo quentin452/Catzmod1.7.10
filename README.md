@@ -25,10 +25,10 @@ Curseforge: [https://www.curseforge.com/minecraft/mc-mods/catzmod]("Curseforge")
 TODO : 
 
 * add a cat dimension
+* add a cat tnt
 * add a cat entity
 * and a cat biome
-* add a music 
-* add tools 
+* add a music
 * add armors
 * make worldgen cat ore
 * make cat structure worldgen

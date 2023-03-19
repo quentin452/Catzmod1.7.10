@@ -1,5 +1,6 @@
 item.catCoin.name=§4Cat Coin
 item.catCoin.tooltip=It's just a coin!
+item.catStick.name=Cat Stick
 
 tile.catBlock.name=§4Cat Block
 tile.catBlock.tooltip"=It's just a catblock!
