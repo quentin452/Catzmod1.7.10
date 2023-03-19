@@ -29,7 +29,6 @@ TODO :
 * add a cat entity
 * and a cat biome
 * add a music
-* make worldgen cat ore
 * make cat structure worldgen
 * make a gun/ammunation
 * make doors/trapdoors
@@ -37,5 +36,5 @@ TODO :
 * make a villager/personalized trades
 * make a config file
 * add command to summon my entities
-
+* add summon eggs
 * fix tooltips are doesn't work

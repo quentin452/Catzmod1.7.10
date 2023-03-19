@@ -10,8 +10,10 @@ item.cat_boots.name=Cat boots
 item.cat_chestplate.name=Cat Chestplate
 item.cat_helmet.name=Cat Helmet
 item.cat_leggings.name=Cat Leggings
+item.catIngot.name=Cat Ingot
 
 tile.catBlock.name=§4Cat Block
 tile.catBlock.tooltip"=It's just a block!
 tile.catTorch.name=§4Cat Torch
 tile.catBlock.tooltip"=It's just a torch!
+tile.catOre.name=Cat Ore

@@ -5,12 +5,18 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import fr.iamacat.catmod.blocks.CatOre;
 import fr.iamacat.catmod.init.RegisterBlocks;
 import fr.iamacat.catmod.init.RegisterItems;
 import fr.iamacat.catmod.proxy.IProxy;
 import fr.iamacat.catmod.utils.CatTab;
 import fr.iamacat.catmod.utils.Reference;
+import fr.iamacat.catmod.worldgen.CatOreGen;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.oredict.OreDictionary;
+
+import java.rmi.registry.Registry;
 
 @Mod(modid = Reference.MOD_ID , name = Reference.MOD_NAME,version = Reference.MOD_VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
 public class Catmod {
@@ -28,6 +34,7 @@ public class Catmod {
         RegisterItems.register();
         RegisterBlocks.init();
         RegisterBlocks.register();
+        GameRegistry.registerWorldGenerator(new CatOreGen(),0);
     }
 
     @Mod.EventHandler
