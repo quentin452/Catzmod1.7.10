@@ -4,3 +4,8 @@ item.catCoin.tooltip=It's just a coin!
 tile.catBlock.name=§4Cat Block
 tile.catBlock.tooltip"=It's just a catblock!
 
+item.catSword.name=Cat Sword
+item.catAxe.name=Cat Axe
+item.catHoe.name=Cat Hoe
+item.catPickaxe.name=Cat Pickaxe
+item.catShovel.name=Cat Shovel
