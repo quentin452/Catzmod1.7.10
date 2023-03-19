@@ -37,3 +37,5 @@ TODO :
 * make vines/leaves/tree
 * make a villager/personalized trades
 * make a config file
+
+* fix tooltips are doesn't work
