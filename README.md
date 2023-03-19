@@ -29,7 +29,6 @@ TODO :
 * add a cat entity
 * and a cat biome
 * add a music
-* add armors
 * make worldgen cat ore
 * make cat structure worldgen
 * make a gun/ammunation
