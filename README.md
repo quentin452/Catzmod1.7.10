@@ -20,7 +20,7 @@ Modrinth: [https://modrinth.com/mod/catzmod/version/0.1]("Modrinth")
 
 Github: [https://github.com/quentin452/Catzmod1.7.10]("Github")
 
-Curseforge: [https://www.curseforge.com/minecraft/mc-mods/catzmod]("Curseforge")
+Curseforge: [https://www.curseforge.com/minecraft/mc-mods/catsmod]("Curseforge")
 
 TODO : 
 
