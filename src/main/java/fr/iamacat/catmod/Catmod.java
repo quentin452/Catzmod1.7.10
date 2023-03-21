@@ -15,7 +15,7 @@ import fr.iamacat.catmod.init.RegisterBlocks;
 import fr.iamacat.catmod.init.RegisterItems;
 import fr.iamacat.catmod.utils.CatTab;
 import fr.iamacat.catmod.utils.Reference;
-import fr.iamacat.catmod.worldgen.ooregen.CatOreGen;
+import fr.iamacat.catmod.worldgen.oregen.CatOreGen;
 import net.minecraft.creativetab.CreativeTabs;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
