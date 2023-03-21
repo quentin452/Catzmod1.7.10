@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation;
 public class RenderCatAgressiveEntity extends RenderLiving
 {
 
-    private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/mobs/MobTuto.png");
+    private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":textures/entity/CatAgressiveEntity.png");
 
     public RenderCatAgressiveEntity(ModelBase p_i1262_1_, float p_i1262_2_)
     {

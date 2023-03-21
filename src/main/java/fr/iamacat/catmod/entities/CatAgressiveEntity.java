@@ -24,7 +24,7 @@ public class CatAgressiveEntity extends EntityMob {
         this.targetTasks.addTask(1, new EntityAIHurtByTarget(this,true));
         this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class,0,true));//can be capable to hit players?
         this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityVillager.class,0,false));//can be capable to hit villagers?
-        this.setSize(0.6F,1,8F);//size in block, change this if your mob model is longer/taller
+        this.setSize(0.6F,1,8F);//size in block, change this if your mob texture is longer/taller
     }
 
     private void setSize(float v, int i, float v1) {
