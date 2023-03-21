@@ -9,8 +9,6 @@ public class EntityCatTnt extends EntityTNTPrimed {
 
     public int fuse;
     private String customName;
-    //no usage
-    private ModelBase customModel;
 
     public EntityCatTnt(World world) {
         super(world);

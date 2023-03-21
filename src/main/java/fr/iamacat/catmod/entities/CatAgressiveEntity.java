@@ -9,6 +9,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeModContainer;
 
 public class CatAgressiveEntity extends EntityMob {
+
     public CatAgressiveEntity(World p_i1738_1_) {
         super(p_i1738_1_);
         // addTask(0)the smaller the number, the faster the task will be executed
@@ -24,10 +25,7 @@ public class CatAgressiveEntity extends EntityMob {
         this.targetTasks.addTask(1, new EntityAIHurtByTarget(this,true));
         this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class,0,true));//can be capable to hit players?
         this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityVillager.class,0,false));//can be capable to hit villagers?
-        this.setSize(0.6F,1,8F);//size in block, change this if your mob texture is longer/taller
-    }
-
-    private void setSize(float v, int i, float v1) {
+        //this.setSize(0.6F,1,8F);//size in block, change this if your mob texture is longer/taller
     }
 
     protected void applyEntityAttribute(){

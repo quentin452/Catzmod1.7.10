@@ -9,23 +9,26 @@ import net.minecraft.world.World;
 public class EntityTNTSpawn extends Entity {
     private int fuse;
     public EntityTNTSpawn(World world) {
+        this(world, 0.0, 0.0, 0.0, null);
+    }
+
+    public EntityTNTSpawn(World world, double x, double y, double z, EntityLivingBase placer) {
         super(world);
         this.fuse = 80;
         this.preventEntitySpawning = true;
         this.setSize(0.98F, 0.98F);
-    }
-
-    public EntityTNTSpawn(World world, double x, double y, double z, EntityLivingBase placer) {
-        this(world);
         this.setPosition(x, y, z);
-        float f = (float)(Math.random() * Math.PI * 2.0D);
-        this.motionX = (double)(-((float)Math.sin((double)f)) * 0.02F);
-        this.motionY = 0.20000000298023224D;
-        this.motionZ = (double)(-((float)Math.cos((double)f)) * 0.02F);
+        if (placer != null) {
+            float f = (float)(Math.random() * Math.PI * 2.0D);
+            this.motionX = (double)(-((float)Math.sin((double)f)) * 0.02F);
+            this.motionY = 0.20000000298023224D;
+            this.motionZ = (double)(-((float)Math.cos((double)f)) * 0.02F);
+        }
         this.prevPosX = x;
         this.prevPosY = y;
         this.prevPosZ = z;
     }
+
 
     @Override
     public void onUpdate() {

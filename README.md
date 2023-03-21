@@ -39,9 +39,9 @@ TODO :
 * add achievement
 * add passive entity
 * add dimension
+* add an enchant
 
 * fix tooltips are doesn't work
-* fix entities names
 * fix the entity CatAgressiveEntity run has lower tick/no animation
 * fix the tnt model doesn't work
 

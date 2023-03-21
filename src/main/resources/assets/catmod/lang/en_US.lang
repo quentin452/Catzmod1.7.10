@@ -21,3 +21,5 @@ tile.catOre.name=Cat Ore
 tile.catTnt.name=Cat Tnt
 tile.catStairs.name=Cat Stairs
 tile.catFence.name=Cat Fence
+
+entity.CatAgressiveEntity.name=Cat Agressive Entity
