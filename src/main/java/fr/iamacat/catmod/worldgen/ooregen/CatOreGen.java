@@ -1,4 +1,4 @@
-package fr.iamacat.catmod.worldgen;
+package fr.iamacat.catmod.worldgen.ooregen;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;

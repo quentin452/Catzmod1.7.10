@@ -19,3 +19,5 @@ tile.catTorch.name=§4Cat Torch
 tile.catTorch.tooltip"=It's just a torch!
 tile.catOre.name=Cat Ore
 tile.catTnt.name=Cat Tnt
+tile.catStairs.name=Cat Stairs
+tile.catFence.name=Cat Fence
