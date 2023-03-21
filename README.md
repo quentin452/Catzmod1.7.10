@@ -39,7 +39,6 @@ TODO :
 * add achievement
 * add passive entity
 * add dimension
-* add biome
 
 * fix tooltips are doesn't work
 * fix entities names
