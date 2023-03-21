@@ -16,11 +16,11 @@ This mod provides an additional item for the user to craft and utilize in their 
 
 - Links to descriptions of my projects.
 
-Modrinth: [https://modrinth.com/mod/catzmod/version/0.1]("Modrinth")
+[*Modrinth*](https://modrinth.com/mod/catzmod/version/0.1)
 
-Github: [https://github.com/quentin452/Catzmod1.7.10]("Github")
+[*Github*](https://github.com/quentin452/Catzmod1.7.10)
 
-Curseforge: [https://www.curseforge.com/minecraft/mc-mods/catsmod]("Curseforge")
+[*Curseforge*](https://www.curseforge.com/minecraft/mc-mods/catsmod)
 
 TODO : 
 
