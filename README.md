@@ -45,4 +45,4 @@ TODO :
 * fix the entity CatAgressiveEntity run has lower tick/no animation
 * fix the tnt model doesn't work
 
-Some of theses description is by SkyDash #4150
+Some of these description is by SkyDash #4150
