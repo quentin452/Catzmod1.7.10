@@ -24,19 +24,26 @@ Curseforge: [https://www.curseforge.com/minecraft/mc-mods/catsmod]("Curseforge")
 
 TODO : 
 
-* add a cat dimension
-* add a cat entity
 * and a cat biome
 * add a music
+* add completly custom entity
 * make cat structure worldgen
 * make a gun/ammunation
 * make doors/trapdoors
 * make vines/leaves/tree
 * make a villager/personalized trades
 * make a config file
-* add command to summon my entities
-* add summon eggs
+* add entity drops for custom entity
+* add custom chest/crafting table
+* add food
+* add achievement
+* add passive entity
+* add dimension
+* add biome
+
 * fix tooltips are doesn't work
-* add tnt(models using blockbench or something)
+* fix entities names
+* fix the entity CatAgressiveEntity run has lower tick/no animation
+* fix the tnt model doesn't work
 
 Some of theses description is by SkyDash #4150

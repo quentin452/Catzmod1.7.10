@@ -1,6 +1,11 @@
 package fr.iamacat.catmod.proxy;
 
-public abstract class CommonProxy implements IProxy
-{
+import static fr.iamacat.catmod.Catmod.proxy;
 
+public abstract class CommonProxy
+{
+    public void registerRenders()
+    {
+        proxy.registerRenders();
+    }
 }

@@ -1,22 +1,16 @@
 // tnt rendering
-package fr.iamacat.catmod.entities;
+package fr.iamacat.catmod.renders.tnt;
 
-import fr.iamacat.catmod.model.ModelCatTnt;
-import net.minecraft.client.model.ModelBase;
+import fr.iamacat.catmod.entities.tnt.EntityCatTnt;
+import fr.iamacat.catmod.models.ModelCatTnt;
 import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import net.minecraft.entity.Entity;
-
+//no usage
 public class RenderCatTnt extends Render {
 
-    public RenderCatTnt() {
-        super();
-    }
-
     private static final ResourceLocation CAT_TNT_TEXTURE = new ResourceLocation("textures/entity/cat_tnt.png");
-
 
     @Override
     public void doRender(Entity entity, double x, double y, double z, float entityYaw, float partialTicks) {
@@ -38,8 +32,6 @@ public class RenderCatTnt extends Render {
             GL11.glPopMatrix();
         }
     }
-
-
 
     @Override
     protected ResourceLocation getEntityTexture(Entity entity) {

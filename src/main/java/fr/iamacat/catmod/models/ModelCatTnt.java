@@ -1,4 +1,4 @@
-package fr.iamacat.catmod.model;
+package fr.iamacat.catmod.models;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;

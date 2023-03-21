@@ -1,4 +1,4 @@
-package fr.iamacat.catmod.entities;
+package fr.iamacat.catmod.entities.tnt;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.entity.item.EntityTNTPrimed;
@@ -9,6 +9,7 @@ public class EntityCatTnt extends EntityTNTPrimed {
 
     public int fuse;
     private String customName;
+    //no usage
     private ModelBase customModel;
 
     public EntityCatTnt(World world) {

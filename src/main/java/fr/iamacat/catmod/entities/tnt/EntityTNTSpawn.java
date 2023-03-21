@@ -1,13 +1,12 @@
 //needed to make a custom tnt(entity)
-package fr.iamacat.catmod.entities;
+package fr.iamacat.catmod.entities.tnt;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.nbt.NBTTagCompound;
-//import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.world.World;
 //no usage
-public class EntityTNTSpawn extends Entity { //weird //todo
+public class EntityTNTSpawn extends Entity {
     private int fuse;
     public EntityTNTSpawn(World world) {
         super(world);
@@ -48,8 +47,7 @@ public class EntityTNTSpawn extends Entity { //weird //todo
         if (this.fuse-- <= 0) {
             this.explode();
         } else {
-            this.worldObj.spawnParticle("smoke", this.posX, this.posY + 0.5D, this.posZ, 0.0D, 0.0D, 0.0D); //This will spawn a "smoke" particle at the entity's position. You can also use other particle names like "explode", "largesmoke", "flame", and so on.
-
+            this.worldObj.spawnParticle("smoke", this.posX, this.posY + 0.5D, this.posZ, 0.0D, 0.0D, 0.0D);
         }
     }
 
@@ -72,9 +70,4 @@ public class EntityTNTSpawn extends Entity { //weird //todo
     protected void writeEntityToNBT(NBTTagCompound nbt) {
         nbt.setShort("Fuse", (short)this.fuse);
     }
-
-    //@Override
-    //public boolean isInRangeToRender(Vec3 vec) {
-    //    return true;
     }
-
