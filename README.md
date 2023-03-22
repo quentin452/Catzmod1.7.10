@@ -23,6 +23,9 @@ This mod provides an additional item for the user to craft and utilize in their 
 TODO : 
 
 * add a music
+* add a culture
+* add a keyboard touch
+* add a way to modify drops of vanilla blocks
 * add completly custom entity
 * make cat structure worldgen
 * make a gun/ammunation
@@ -31,7 +34,7 @@ TODO :
 * make a villager/personalized trades
 * make a config file
 * add achievement/achievement tab
-* add dimension
+* add dimension/a way to tp to this dimension
 * add a enchant
 * make a 3d block using TESR render/add custom chest/crafting table
 * make a 3d block using ISBRH render
