@@ -6,11 +6,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import fr.iamacat.catmod.init.RegisterBiomes;
-import fr.iamacat.catmod.init.RegisterEntity;
+import fr.iamacat.catmod.init.*;
 import fr.iamacat.catmod.proxy.CommonProxy;
-import fr.iamacat.catmod.init.RegisterBlocks;
-import fr.iamacat.catmod.init.RegisterItems;
 import fr.iamacat.catmod.utils.CatTab;
 import fr.iamacat.catmod.utils.Reference;
 import fr.iamacat.catmod.worldgen.oregen.CatOreGen;
@@ -47,5 +44,6 @@ public class Catmod {
     public void init(FMLInitializationEvent event) {
         proxy.registerRenders();
         RegisterEntity.init();
+        GameRegistry.registerFuelHandler(new RegisterFuel());
         }
     }
