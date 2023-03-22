@@ -6,6 +6,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import fr.iamacat.catmod.init.RegisterBiomes;
 import fr.iamacat.catmod.init.RegisterEntity;
 import fr.iamacat.catmod.proxy.CommonProxy;
 import fr.iamacat.catmod.init.RegisterBlocks;
@@ -31,6 +32,7 @@ public class Catmod {
         RegisterBlocks.init();
         RegisterBlocks.register();
         GameRegistry.registerWorldGenerator(new CatOreGen(), 0);
+        RegisterBiomes.init();
     }
     public static class WorldLoadHandler {
 

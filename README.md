@@ -24,7 +24,6 @@ This mod provides an additional item for the user to craft and utilize in their 
 
 TODO : 
 
-* and a cat biome
 * add a music
 * add completly custom entity
 * make cat structure worldgen
