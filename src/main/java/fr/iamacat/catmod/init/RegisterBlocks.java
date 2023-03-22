@@ -21,28 +21,14 @@ public class RegisterBlocks {
     public static Block catTnt;//tnt
 
     public static void init() {
-     catBlock = new CatBlock(rock)
-                .setBlockName("catBlock")
-                .setCreativeTab(Catmod.catTab)
-                .setBlockTextureName(Reference.MOD_ID + ":catBlock");
-     catTorch = new CatTorch()
-                .setBlockName("catTorch")
-                .setCreativeTab(Catmod.catTab)
-                .setBlockTextureName(Reference.MOD_ID + ":catTorch");
-     catOre = new CatOre()
-                .setBlockName("catOre")
-                .setCreativeTab(Catmod.catTab)
-                .setBlockTextureName(Reference.MOD_ID + ":cat_ore");
+     catBlock = new CatBlock(rock).setBlockName("catBlock").setCreativeTab(Catmod.catTab).setBlockTextureName(Reference.MOD_ID + ":catBlock");
+     catTorch = new CatTorch().setBlockName("catTorch").setCreativeTab(Catmod.catTab).setBlockTextureName(Reference.MOD_ID + ":catTorch");
+     catOre = new CatOre().setBlockName("catOre").setCreativeTab(Catmod.catTab).setBlockTextureName(Reference.MOD_ID + ":cat_ore");
 
-     catStairs = new CatStairs(RegisterBlocks.catBlock,0)
-                .setBlockName("catStairs")
-                .setCreativeTab(Catmod.catTab);
-     catTnt = new CatTnt()
-                .setCreativeTab(Catmod.catTab)
-                .setBlockName("catTnt");
-     catFence = new CatFence(Reference.MOD_ID+ ":catBlock", Material.rock)
-                .setBlockName("catFence")
-                .setCreativeTab(Catmod.catTab);
+     catStairs = new CatStairs(RegisterBlocks.catBlock,0).setBlockName("catStairs").setCreativeTab(Catmod.catTab);
+     catTnt = new CatTnt().setCreativeTab(Catmod.catTab).setBlockName("catTnt").setStepSound(Block.soundTypeGrass);
+     //.setBlockTextureName(RefStrings.MODID + ":tnt")
+     catFence = new CatFence(Reference.MOD_ID+ ":catBlock", Material.rock).setBlockName("catFence").setCreativeTab(Catmod.catTab);
         }
     public static void register() {
         //register names

@@ -21,7 +21,7 @@ public class RenderCatAgressiveEntity extends RenderLiving
 
     protected ResourceLocation getEntiyTexture(EntityLiving living)
     {
-        return this.getEntityTexture((CatAgressiveEntity) living);
+    return this.getEntityTexture((CatAgressiveEntity) living);
     }
 
     @Override

@@ -6,6 +6,5 @@ public abstract class CommonProxy
 {
     public void registerRenders()
     {
-        proxy.registerRenders();
     }
 }

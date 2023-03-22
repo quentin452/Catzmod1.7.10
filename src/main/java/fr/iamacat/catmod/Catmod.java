@@ -2,6 +2,7 @@ package fr.iamacat.catmod;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -22,7 +23,7 @@ import net.minecraft.creativetab.CreativeTabs;
 public class Catmod {
     @Mod.Instance(Reference.MOD_ID)
     public static Catmod instance;
-
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
     public static CommonProxy proxy;
 
     public static CreativeTabs catTab = new CatTab("catTab");
@@ -34,23 +35,6 @@ public class Catmod {
         RegisterBlocks.init();
         RegisterBlocks.register();
         GameRegistry.registerWorldGenerator(new CatOreGen(), 0);
-
-        // Register your custom entity here
-        EntityRegistry.registerModEntity(EntityCatTnt.class, "CatTntEntity", 1, Catmod.instance, 64, 1, true);
-
-        // Register your entity rendering handler
-        int entityId = EntityRegistry.findGlobalUniqueEntityId();
-        RenderingRegistry.registerEntityRenderingHandler(EntityCatTnt.class, new RenderCatTnt());
-
-         /*
-Register your entity rendering handler
-int entityId = EntityRegistry.findGlobalUniqueEntityId();
-RenderingRegistry.registerEntityRenderingHandler(EntityCatTnt.class, new RenderCatTnt());
-Register your custom dimension here
-If you want to add more custom entities, you can use the code below as a template
-EntityRegistry.registerModEntity(EntityCatTnt.class, "my_custom_entity", 1, Catmod.instance, 64, 1, true);
-RenderingRegistry.registerEntityRenderingHandler(EntityCatTnt.class, new EntityCatTnt.RenderCatTnt(RenderManager.instance));
-        */
     }
     public static class WorldLoadHandler {
 
@@ -63,6 +47,7 @@ RenderingRegistry.registerEntityRenderingHandler(EntityCatTnt.class, new EntityC
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        proxy.registerRenders();
         RegisterEntity.init();
         }
     }

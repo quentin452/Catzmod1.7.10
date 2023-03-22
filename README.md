@@ -41,7 +41,7 @@ TODO :
 * add dimension
 * add a enchant
 
-* fix the entity CatAgressiveEntity run has lower tick/no animation
+* fix the entity CatAgressiveEntity/CatPassiveEntity run has lower tick/run no fast
 * fix the tnt model doesn't work
 
 Some of these description is by SkyDash #4150

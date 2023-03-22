@@ -1,10 +1,12 @@
 package fr.iamacat.catmod.entities;
 
+import fr.iamacat.catmod.init.RegisterItems;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.*;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeModContainer;
 
@@ -34,5 +36,9 @@ public class CatAgressiveEntity extends EntityMob {
         this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(2.0D);
         this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(3.0D);
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(20);
+    }
+
+    public Item getDropItem(){
+        return RegisterItems.catCoin;
     }
 }
