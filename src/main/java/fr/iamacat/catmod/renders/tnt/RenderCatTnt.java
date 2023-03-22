@@ -2,7 +2,9 @@
 package fr.iamacat.catmod.renders.tnt;
 
 import fr.iamacat.catmod.entities.tnt.EntityCatTnt;
+import fr.iamacat.catmod.models.ModelCatPassiveEntity;
 import fr.iamacat.catmod.models.ModelCatTnt;
+import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;

@@ -2,7 +2,6 @@ package fr.iamacat.catmod.init;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import fr.iamacat.catmod.entities.CatAgressiveEntity;
-//import fr.iamacat.catmod.entities.CatPassiveEntity;
 import fr.iamacat.catmod.entities.CatPassiveEntity;
 import fr.iamacat.catmod.entities.tnt.EntityCatTnt;
 import fr.iamacat.catmod.handler.EntityHandler;

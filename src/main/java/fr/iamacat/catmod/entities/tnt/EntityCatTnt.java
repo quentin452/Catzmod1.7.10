@@ -1,6 +1,5 @@
 package fr.iamacat.catmod.entities.tnt;
 
-import net.minecraft.client.model.ModelBase;
 import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;

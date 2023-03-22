@@ -3,6 +3,7 @@ package fr.iamacat.catmod.handler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import fr.iamacat.catmod.Catmod;
+import fr.iamacat.catmod.entities.CatAgressiveEntity;
 import fr.iamacat.catmod.entities.tnt.EntityCatTnt;
 import fr.iamacat.catmod.renders.tnt.RenderCatTnt;
 import net.minecraft.entity.EnumCreatureType;
@@ -13,6 +14,7 @@ import java.util.Random;
 
 public class EntityHandler
 {
+
     public static void registerMonster(Class entityclass, String string){
         int entityID = EntityRegistry.findGlobalUniqueEntityId();
 
