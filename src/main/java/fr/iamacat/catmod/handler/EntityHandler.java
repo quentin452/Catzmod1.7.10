@@ -30,9 +30,8 @@ public class EntityHandler
     public static void registerCreature(Class entityclass, String string){
         int entityID = EntityRegistry.findGlobalUniqueEntityId();
 
-       EntityRegistry.registerGlobalEntityID(entityclass, string, EntityRegistry.findGlobalUniqueEntityId(), new Color(60, 253, 1).getRGB(), new Color(0, 235, 243).getRGB());// to make eggs for the entity
+       EntityRegistry.registerGlobalEntityID(entityclass, string, entityID, new Color(60, 253, 1).getRGB(), new Color(0, 235, 243).getRGB());// to make eggs for the entity
        EntityRegistry.addSpawn(string, 100, 5,10, EnumCreatureType.creature, BiomeGenBase.beach,BiomeGenBase.forest,BiomeGenBase.plains,CatBiome.INSTANCE);
        EntityRegistry.registerModEntity(entityclass, string, entityID, Catmod.instance,16,1,true);
-
    }
 }
