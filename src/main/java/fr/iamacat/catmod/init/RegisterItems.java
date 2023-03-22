@@ -29,60 +29,21 @@ public class RegisterItems {
             "CAT_ARMOR_MATERIAL", 2000, new int[]{2, 7, 5, 3}, 30);
 
     public static void init() {
-            catCoin = new CatCoin()
-                    .setUnlocalizedName("catCoin")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":catCoin");
-            catStick = new Item()
-                    .setUnlocalizedName("catStick")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":catStick");
-            catIngot = new Item()
-                    .setUnlocalizedName("catIngot")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":cat_ingot");
-            catGunpowder = new Item()
-                    .setUnlocalizedName("catGunpowder")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":catGunpowder");
+            catCoin = new CatCoin().setUnlocalizedName("catCoin").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catCoin");
+            catStick = new Item().setUnlocalizedName("catStick").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catStick");
+            catIngot = new Item().setUnlocalizedName("catIngot").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":cat_ingot");
+            catGunpowder = new Item().setUnlocalizedName("catGunpowder").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catGunpowder");
             //Kit Armors
-            cat_helmet = new CatArmors(CAT_ARMOR_MATERIAL,0,0)
-                    .setUnlocalizedName("cat_helmet")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":cat_helmet");
-            cat_chestplate = new CatArmors(CAT_ARMOR_MATERIAL,0,1)
-                    .setUnlocalizedName("cat_chestplate")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":cat_chestplate");
-            cat_leggings = new CatArmors(CAT_ARMOR_MATERIAL,0,2)
-                    .setUnlocalizedName("cat_leggings")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":cat_leggings");
-            cat_boots = new CatArmors(CAT_ARMOR_MATERIAL,0, 3)
-                    .setUnlocalizedName("cat_boots")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":cat_boots");
+            cat_helmet = new CatArmors(CAT_ARMOR_MATERIAL,0,0).setUnlocalizedName("cat_helmet").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":cat_helmet");
+            cat_chestplate = new CatArmors(CAT_ARMOR_MATERIAL,0,1).setUnlocalizedName("cat_chestplate").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":cat_chestplate");
+            cat_leggings = new CatArmors(CAT_ARMOR_MATERIAL,0,2).setUnlocalizedName("cat_leggings").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":cat_leggings");
+            cat_boots = new CatArmors(CAT_ARMOR_MATERIAL,0, 3).setUnlocalizedName("cat_boots").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":cat_boots");
             //Kit tools
-            catSword = new CatSword(CAT_TOOLS_MATERIAL)
-                    .setUnlocalizedName("catSword")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":catSword");
-            catShovel = new CatShovel(CAT_TOOLS_MATERIAL)
-                    .setUnlocalizedName("catShovel")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":catShovel");
-            catPickaxe = new CatPickaxe(CAT_TOOLS_MATERIAL)
-                    .setUnlocalizedName("catPickaxe")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":catPickaxe");
-            catHoe = new CatHoe(CAT_TOOLS_MATERIAL)
-                    .setUnlocalizedName("catHoe")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":catHoe");
-            catAxe = new CatAxe(CAT_TOOLS_MATERIAL)
-                    .setUnlocalizedName("catAxe")
-                    .setCreativeTab(Catmod.catTab)
-                    .setTextureName(Reference.MOD_ID + ":catAxe");
+            catSword = new CatSword(CAT_TOOLS_MATERIAL).setUnlocalizedName("catSword").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catSword");
+            catShovel = new CatShovel(CAT_TOOLS_MATERIAL).setUnlocalizedName("catShovel").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catShovel");
+            catPickaxe = new CatPickaxe(CAT_TOOLS_MATERIAL).setUnlocalizedName("catPickaxe").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catPickaxe");
+            catHoe = new CatHoe(CAT_TOOLS_MATERIAL).setUnlocalizedName("catHoe").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catHoe");
+            catAxe = new CatAxe(CAT_TOOLS_MATERIAL).setUnlocalizedName("catAxe").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catAxe");
 }
 //register items/blocks + make recipes
     public static void register(){
