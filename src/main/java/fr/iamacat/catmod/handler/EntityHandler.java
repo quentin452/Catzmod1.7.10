@@ -21,7 +21,7 @@ public class EntityHandler
         int entityID = EntityRegistry.findGlobalUniqueEntityId();
 
         EntityRegistry.registerGlobalEntityID(entityclass, string, entityID, new Color(0, 221, 243).getRGB(), new Color(243, 0, 0).getRGB());// to make eggs for the entity
-        EntityRegistry.addSpawn(string, 100, 5,10, EnumCreatureType.monster, BiomeGenBase.beach,BiomeGenBase.desert,BiomeGenBase.forest,BiomeGenBase.plains,CatBiome.INSTANCE);
+        EntityRegistry.addSpawn(string, 100, 2,4, EnumCreatureType.monster, BiomeGenBase.beach,BiomeGenBase.desert,BiomeGenBase.forest,BiomeGenBase.plains,CatBiome.INSTANCE);
         EntityRegistry.registerModEntity(entityclass, string, entityID, Catmod.instance,32,1,true);
 
         //EntityRegistry.registerModEntity(EntityCatTnt.class, "CatTntEntity", 1, Catmod.instance, 64, 1, true);
@@ -31,7 +31,7 @@ public class EntityHandler
         int entityID = EntityRegistry.findGlobalUniqueEntityId();
 
        EntityRegistry.registerGlobalEntityID(entityclass, string, entityID, new Color(60, 253, 1).getRGB(), new Color(0, 235, 243).getRGB());// to make eggs for the entity
-       EntityRegistry.addSpawn(string, 100, 5,10, EnumCreatureType.creature, BiomeGenBase.beach,BiomeGenBase.forest,BiomeGenBase.plains,CatBiome.INSTANCE);
+       EntityRegistry.addSpawn(string, 100, 4,2, EnumCreatureType.creature, BiomeGenBase.beach,BiomeGenBase.forest,BiomeGenBase.plains,CatBiome.INSTANCE);
        EntityRegistry.registerModEntity(entityclass, string, entityID, Catmod.instance,16,1,true);
    }
 }
