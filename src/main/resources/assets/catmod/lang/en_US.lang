@@ -12,6 +12,7 @@ item.cat_helmet.name=Cat Helmet
 item.cat_leggings.name=Cat Leggings
 item.catIngot.name=Cat Ingot
 item.catGunpowder.name=Cat Gunpowder
+item.catFood.name=Cat Food
 
 tile.catBlock.name=§4Cat Block
 tile.catBlock.tooltip"=It's just a block!

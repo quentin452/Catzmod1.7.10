@@ -15,10 +15,8 @@ import static fr.iamacat.catmod.init.RegisterItems.catIngot;
 import static net.minecraft.block.material.Material.rock;
 
 public class RegisterBlocks {
-    public static Block catBlock,catTorch,catStairs,catFence;//blocks
-    public static Block catOre;//ores
-
-    public static Block catTnt;//tnt
+    //blocks
+    public static Block catBlock,catTorch,catStairs,catFence,catTnt,catOre;
 
     public static void init() {
      catBlock = new CatBlock(rock).setBlockName("catBlock").setCreativeTab(Catmod.catTab).setBlockTextureName(Reference.MOD_ID + ":catBlock");

@@ -34,13 +34,13 @@ TODO :
 * make a config file
 * add custom chest/crafting table
 * add food
-* add achievement
+* add achievement/achievement tab
 * add dimension
 * add a enchant
 * make a 3d block using TESR render
 * make a 3d block using ISBRH render
 
-* siwtch Global entity id to mod entity id
+* switching Global entity id to mod entity id
 
 * fix the entity CatAgressiveEntity/CatPassiveEntity run has lower tick/run no fast
 * fix the tnt model doesn't work

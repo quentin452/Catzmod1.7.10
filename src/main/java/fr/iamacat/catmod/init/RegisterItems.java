@@ -3,6 +3,7 @@ package fr.iamacat.catmod.init;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.iamacat.catmod.armors.CatArmors;
 import fr.iamacat.catmod.items.CatCoin;
+import fr.iamacat.catmod.items.CatFood;
 import fr.iamacat.catmod.tools.*;
 import fr.iamacat.catmod.utils.Reference;
 import net.minecraft.init.Blocks;
@@ -17,11 +18,7 @@ import net.minecraftforge.common.util.EnumHelper;
 public class RegisterItems {
 
     //items
-    public static Item catCoin,catStick,catIngot,catGunpowder;
-    //tools
-    public static Item catSword,catHoe,catPickaxe,catShovel,catAxe;
-    //armor
-    public static Item cat_boots,cat_chestplate,cat_helmet,cat_leggings;
+    public static Item cat_boots,cat_chestplate,cat_helmet,cat_leggings,catSword,catHoe,catPickaxe,catShovel,catAxe,catCoin,catStick,catIngot,catGunpowder,catFood;
 
     public static Item.ToolMaterial CAT_TOOLS_MATERIAL = EnumHelper.addToolMaterial(
             "CAT_TOOLS_MATERIAL", 3,2000,6.0F,6.0F,30);
@@ -44,7 +41,9 @@ public class RegisterItems {
             catPickaxe = new CatPickaxe(CAT_TOOLS_MATERIAL).setUnlocalizedName("catPickaxe").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catPickaxe");
             catHoe = new CatHoe(CAT_TOOLS_MATERIAL).setUnlocalizedName("catHoe").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catHoe");
             catAxe = new CatAxe(CAT_TOOLS_MATERIAL).setUnlocalizedName("catAxe").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catAxe");
-}
+            catFood = new CatFood(6,2,true).setUnlocalizedName("catFood").setCreativeTab(Catmod.catTab).setTextureName(Reference.MOD_ID + ":catFood");
+
+    }
 //register items/blocks + make recipes
     public static void register(){
 
@@ -63,6 +62,7 @@ public class RegisterItems {
         GameRegistry.registerItem(cat_boots,"cat_boots");
         GameRegistry.registerItem(catIngot, "catIngot");
         GameRegistry.registerItem(catGunpowder,"catGunpowder");
+        GameRegistry.registerItem(catFood,"catFood");
 
         //register recipes
 
@@ -164,8 +164,13 @@ public class RegisterItems {
                 'G', RegisterItems.catCoin);
         GameRegistry.addRecipe(new ItemStack(catGunpowder ,1),
                 " G ",
-                "G G",
-                " G",
+                        "G G",
+                        " G ",
+                'G', RegisterItems.catCoin);
+        GameRegistry.addRecipe(new ItemStack(catFood ,1),
+                "   ",
+                        "GGG",
+                        "   ",
                 'G', RegisterItems.catCoin);
         }
     }
