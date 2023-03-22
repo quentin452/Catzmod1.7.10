@@ -32,12 +32,10 @@ TODO :
 * make vines/leaves/tree
 * make a villager/personalized trades
 * make a config file
-* add custom chest/crafting table
-* add food
 * add achievement/achievement tab
 * add dimension
 * add a enchant
-* make a 3d block using TESR render
+* make a 3d block using TESR render/add custom chest/crafting table
 * make a 3d block using ISBRH render
 
 * switching Global entity id to mod entity id
