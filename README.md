@@ -33,11 +33,9 @@ TODO :
 * make vines/leaves/tree
 * make a villager/personalized trades
 * make a config file
-* add entity drops for custom entity
 * add custom chest/crafting table
 * add food
 * add achievement
-* add passive entity
 * add dimension
 * add a enchant
 
