@@ -37,6 +37,8 @@ TODO :
 * add achievement
 * add dimension
 * add a enchant
+* make a 3d block using TESR render
+* make a 3d block using ISBRH render
 
 * fix the entity CatAgressiveEntity/CatPassiveEntity run has lower tick/run no fast
 * fix the tnt model doesn't work
