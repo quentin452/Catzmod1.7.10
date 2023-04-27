@@ -12,6 +12,7 @@ import fr.iamacat.catmod.utils.CatTab;
 import fr.iamacat.catmod.utils.Reference;
 import fr.iamacat.catmod.worldgen.oregen.CatOreGen;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
 public class Catmod {
@@ -19,7 +20,6 @@ public class Catmod {
     public static Catmod instance;
     @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
     public static CommonProxy proxy;
-
     public static CreativeTabs catTab = new CatTab("catTab");
 
     @Mod.EventHandler
@@ -37,13 +37,15 @@ public class Catmod {
 
     @Mod.EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
-    }
 
+    }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        proxy.registerRenders();
-        RegisterEntity.init();
         GameRegistry.registerFuelHandler(new RegisterFuel());
+        // Register the proxy as an event handler
+        MinecraftForge.EVENT_BUS.register(proxy);
+        proxy.registerRenders();
+        proxy.registerEntities();
         }
     }
