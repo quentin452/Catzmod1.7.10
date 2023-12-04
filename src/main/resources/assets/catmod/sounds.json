@@ -1,0 +1,42 @@
+{
+  "voidSay": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "craft1",
+        "stream": false}
+    ]
+  },
+  "voidHit": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "hold1",
+        "stream": false}
+    ]
+  },
+  "voidDeath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "hold2",
+        "stream": false}
+    ]
+  },
+  "voidMusic": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "hold3",
+        "stream": false}
+    ]
+  },
+  "tntIgnate": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "tntIgnate",
+        "stream": false}
+    ]
+  }
+}

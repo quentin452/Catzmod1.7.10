@@ -1,4 +1,4 @@
-item.catCoin.name=§4Cat Coin
+item.catCoin.name=Cat Coin
 tooltip.catCoin.item=It's just a coin!
 item.catStick.name=Cat Stick
 item.catSword.name=Cat Sword
@@ -14,12 +14,13 @@ item.catIngot.name=Cat Ingot
 item.catGunpowder.name=Cat Gunpowder
 item.catFood.name=Cat Food
 
-tile.catBlock.name=§4Cat Block
-tile.catBlock.tooltip"=It's just a block!
-tile.catTorch.name=§4Cat Torch
-tile.catTorch.tooltip"=It's just a torch!
+tile.catBlock.name=Cat Block
+tooltip.catBlock.tile"=It's just a block!
+tile.catTorch.name=Cat Torch
+tooltip.catTorch.tile"=It's just a torch!
 tile.catOre.name=Cat Ore
 tile.catTnt.name=Cat Tnt
+tooltip.catTnt.tile=This tnt is §cRadioactive!§r\nMove far away as possible!
 tile.catStairs.name=Cat Stairs
 tile.catFence.name=Cat Fence
 

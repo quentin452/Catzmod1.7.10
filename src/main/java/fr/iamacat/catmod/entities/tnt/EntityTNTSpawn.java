@@ -1,13 +1,16 @@
-//needed to make a custom tnt(entity)
+// needed to make a custom tnt(entity)
 package fr.iamacat.catmod.entities.tnt;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
-//no usage
+
+// no usage(this class isn't used for now)
 public class EntityTNTSpawn extends Entity {
+
     private int fuse;
+
     public EntityTNTSpawn(World world) {
         this(world, 0.0, 0.0, 0.0, null);
     }
@@ -19,16 +22,15 @@ public class EntityTNTSpawn extends Entity {
         this.setSize(0.98F, 0.98F);
         this.setPosition(x, y, z);
         if (placer != null) {
-            float f = (float)(Math.random() * Math.PI * 2.0D);
-            this.motionX = (double)(-((float)Math.sin((double)f)) * 0.02F);
+            float f = (float) (Math.random() * Math.PI * 2.0D);
+            this.motionX = (double) (-((float) Math.sin((double) f)) * 0.02F);
             this.motionY = 0.20000000298023224D;
-            this.motionZ = (double)(-((float)Math.cos((double)f)) * 0.02F);
+            this.motionZ = (double) (-((float) Math.cos((double) f)) * 0.02F);
         }
         this.prevPosX = x;
         this.prevPosY = y;
         this.prevPosZ = z;
     }
-
 
     @Override
     public void onUpdate() {
@@ -71,6 +73,6 @@ public class EntityTNTSpawn extends Entity {
 
     @Override
     protected void writeEntityToNBT(NBTTagCompound nbt) {
-        nbt.setShort("Fuse", (short)this.fuse);
+        nbt.setShort("Fuse", (short) this.fuse);
     }
-    }
+}

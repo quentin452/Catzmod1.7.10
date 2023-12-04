@@ -43,7 +43,7 @@ public class CatTorch extends BlockTorch {
             int meta = world.getBlockMetadata(x, y, z);
             Block blockBehind = world.getBlock(x, y, z + 1);
             if (placer != null) {
-                int direction = MathHelper.floor_double((double)(placer.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+                int direction = MathHelper.floor_double((double) (placer.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
                 if (direction == 0) {
                     meta = 2;
                 }
