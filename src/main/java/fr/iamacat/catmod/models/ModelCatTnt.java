@@ -18,13 +18,15 @@ public class ModelCatTnt extends ModelBase {
         this.tnt.setRotationPoint(0F, 16F, 0F);
     }
 
-    public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float headYaw, float headPitch, float scale) {
+    public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float headYaw,
+        float headPitch, float scale) {
         super.render(entity, limbSwing, limbSwingAmount, ageInTicks, headYaw, headPitch, scale);
         setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, headYaw, headPitch, scale, entity);
         tnt.render(scale);
     }
 
-    public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float headYaw, float headPitch, float scale, Entity entity) {
+    public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float headYaw,
+        float headPitch, float scale, Entity entity) {
         super.setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, headYaw, headPitch, scale, entity);
     }
 }

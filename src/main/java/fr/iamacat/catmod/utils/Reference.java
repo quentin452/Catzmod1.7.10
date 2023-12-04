@@ -1,6 +1,7 @@
 package fr.iamacat.catmod.utils;
 
 public class Reference {
+
     public static final String MOD_ID = "catmod";
     public static final String MOD_NAME = "Cat Mod";
     public static final String MOD_VERSION = "1.0";

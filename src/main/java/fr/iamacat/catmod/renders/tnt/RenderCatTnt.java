@@ -1,18 +1,21 @@
 // tnt rendering
 package fr.iamacat.catmod.renders.tnt;
 
-import fr.iamacat.catmod.entities.tnt.EntityCatTnt;
-import fr.iamacat.catmod.models.ModelCatPassiveEntity;
-import fr.iamacat.catmod.models.ModelCatTnt;
-import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.util.ResourceLocation;
-import org.lwjgl.opengl.GL11;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
+
+import org.lwjgl.opengl.GL11;
+
+import fr.iamacat.catmod.entities.tnt.EntityCatTnt;
+import fr.iamacat.catmod.models.ModelCatTnt;
 
 public class RenderCatTnt extends Render {
 
-    private static final ResourceLocation CAT_TNT_TEXTURE = new ResourceLocation("textures/entity/cat_tnt.png");//not used for now
+    private static final ResourceLocation CAT_TNT_TEXTURE = new ResourceLocation("textures/entity/cat_tnt.png");// not
+                                                                                                                // used
+                                                                                                                // for
+                                                                                                                // now
 
     @Override
     public void doRender(Entity entity, double x, double y, double z, float entityYaw, float partialTicks) {
@@ -22,7 +25,12 @@ public class RenderCatTnt extends Render {
 
             GL11.glPushMatrix();
             GL11.glTranslatef((float) x, (float) y, (float) z);
-            GL11.glRotatef(entityCatTnt.prevRotationYaw + (entityCatTnt.rotationYaw - entityCatTnt.prevRotationYaw) * partialTicks - 90.0F, 0.0F, 1.0F, 0.0F);
+            GL11.glRotatef(
+                entityCatTnt.prevRotationYaw + (entityCatTnt.rotationYaw - entityCatTnt.prevRotationYaw) * partialTicks
+                    - 90.0F,
+                0.0F,
+                1.0F,
+                0.0F);
             GL11.glTranslatef(0.0F, -1.0F, 0.0F);
             GL11.glRotatef(-entityCatTnt.rotationYaw, 0.0F, 1.0F, 0.0F);
             GL11.glScalef(-1.0F, -1.0F, 1.0F);

@@ -1,6 +1,7 @@
 package fr.iamacat.catmod.blocks;
 
-import fr.iamacat.catmod.init.RegisterItems;
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -8,14 +9,15 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-import java.util.Random;
+import fr.iamacat.catmod.init.RegisterItems;
 
 public class CatOre extends Block {
+
     public CatOre() {
         super(Material.rock);
-        this.setHardness(2.0F);//resistance to pickaxe
-        this.setResistance(15.0F);//resistance to tnt
-        this.setHarvestLevel("pickaxe",3);
+        this.setHardness(2.0F);// resistance to pickaxe
+        this.setResistance(15.0F);// resistance to tnt
+        this.setHarvestLevel("pickaxe", 3);
     }
 
     @Override
@@ -25,7 +27,7 @@ public class CatOre extends Block {
 
     @Override
     public int getExpDrop(IBlockAccess world, int metadata, int fortune) {
-        Random random = world instanceof World ? ((World)world).rand : new Random();
+        Random random = world instanceof World ? ((World) world).rand : new Random();
         return MathHelper.getRandomIntegerInRange(random, 1, 3);
     }
 
