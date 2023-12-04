@@ -12,7 +12,6 @@ import net.minecraft.util.StatCollector;
 public class CatCoin extends Item {
 
     public CatCoin() {
-        this.setFull3D();
         this.setMaxDamage(1);
         this.setPotionEffect(PotionHelper.blazePowderEffect);
     }

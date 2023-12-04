@@ -20,12 +20,11 @@ This mod provides an additional item for the user to craft and utilize in their 
 
 [*Curseforge*](https://www.curseforge.com/minecraft/mc-mods/catsmod)
 
-TODO : 
+TODO :
 
 * add a music
 * add a culture
 * add a keyboard touch
-* add a way to modify drops of vanilla blocks
 * add completly custom entity
 * make cat structure worldgen
 * make a gun/ammunation
@@ -34,14 +33,17 @@ TODO :
 * make a villager/personalized trades
 * make a config file
 * add achievement/achievement tab
-* add dimension/a way to tp to this dimension
+* add dimension/a way to tp to this dimension (WIP)
 * add a enchant
 * make a 3d block using TESR render/add custom chest/crafting table
 * make a 3d block using ISBRH render
+* make catBlocks in catDimension and for it's own brother named catBiome
 
 * switching Global entity id to mod entity id
 
 * fix the entity CatAgressiveEntity/CatPassiveEntity run has lower tick/run no fast
 * fix the tnt model doesn't work
+
+* remake textures
 
 Some of these description is by SkyDash #4150

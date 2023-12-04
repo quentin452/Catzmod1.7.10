@@ -14,7 +14,7 @@ public class CatTabBlocks extends CreativeTabs {
     @Override
     public Item getTabIconItem() {
         return RegisterItems.catCoin;
-    }
+    } // Suppost to be a catBlock
 
     @Override
     public String getTranslatedTabLabel() {

@@ -13,6 +13,8 @@ item.cat_leggings.name=Cat Leggings
 item.catIngot.name=Cat Ingot
 item.catGunpowder.name=Cat Gunpowder
 item.catFood.name=Cat Food
+item.cat_passive_spawn_egg.name=Spawn Cat Passive Entity
+item.cat_agressive_spawn_egg.name=Spawn Cat Agressive Entity
 
 tile.catBlock.name=Cat Block
 tooltip.catBlock.tile"=It's just a block!
@@ -23,6 +25,7 @@ tile.catTnt.name=Cat Tnt
 tooltip.catTnt.tile=This tnt is §cRadioactive!§r\nMove far away as possible!
 tile.catStairs.name=Cat Stairs
 tile.catFence.name=Cat Fence
+tile.catPortalBlock.name=First Cat Dimension Teleporter
 
 entity.CatAgressiveEntity.name=Cat Agressive Entity
 entity.CatPassiveEntity.name=Cat Passive Entity
