@@ -1,5 +1,5 @@
 {
-  "voidSay": {
+  "craft1": {
     "category": "master",
     "sounds": [
       {
@@ -7,7 +7,23 @@
         "stream": false}
     ]
   },
-  "voidHit": {
+  "craft2": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "craft2",
+        "stream": false}
+    ]
+  },
+  "craft3": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "craft3",
+        "stream": false}
+    ]
+  },
+  "hold1": {
     "category": "master",
     "sounds": [
       {
@@ -15,7 +31,7 @@
         "stream": false}
     ]
   },
-  "voidDeath": {
+  "hold2": {
     "category": "master",
     "sounds": [
       {
@@ -23,7 +39,7 @@
         "stream": false}
     ]
   },
-  "voidMusic": {
+  "hold3": {
     "category": "master",
     "sounds": [
       {
@@ -36,6 +52,14 @@
     "sounds": [
       {
         "name": "tntIgnate",
+        "stream": false}
+    ]
+  },
+  "mobdead": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mobdead",
         "stream": false}
     ]
   }

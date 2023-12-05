@@ -9,10 +9,10 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import fr.iamacat.catmod.init.RegisterBiomes;
-import fr.iamacat.catmod.init.RegisterBlocks;
-import fr.iamacat.catmod.init.RegisterFuel;
-import fr.iamacat.catmod.init.RegisterItems;
+import fr.iamacat.catmod.entities.CatAgressiveEntity;
+import fr.iamacat.catmod.entities.CatPassiveEntity;
+import fr.iamacat.catmod.init.*;
+import fr.iamacat.catmod.items.CatSpawnEgg;
 import fr.iamacat.catmod.proxy.CommonProxy;
 import fr.iamacat.catmod.utils.*;
 import fr.iamacat.catmod.worldgen.oregen.CatOreGen;
@@ -23,6 +23,7 @@ import fr.iamacat.catmod.worldgen.oregen.CatOreGen;
     version = Reference.MOD_VERSION,
     acceptedMinecraftVersions = Reference.MC_VERSION)
 public class Catmod {
+
     // todo fix tooltips for blocks
     @Mod.Instance(Reference.MOD_ID)
     public static Catmod instance;
@@ -40,6 +41,9 @@ public class Catmod {
 
     public static CatTabIngots catTab7 = new CatTabIngots("catTab7");
 
+    public static Item CatAgressiveEntitySpawnEgg;
+    public static Item CatPassiveEntitySpawnEgg;
+
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event) {
         RegisterItems.init();
@@ -48,6 +52,22 @@ public class Catmod {
         RegisterBlocks.register();
         GameRegistry.registerWorldGenerator(new CatOreGen(), 0);
         RegisterBiomes.init();
+        RegisterDimension.init();
+
+        // Custom Spawn Eggs
+        CatSpawnEgg catAgressiveEntitySpawnEgg = new CatSpawnEgg(CatAgressiveEntity.class);
+        catAgressiveEntitySpawnEgg.setUnlocalizedName("cat_agressive_spawn_egg")
+            .setCreativeTab(Catmod.catTab4)
+            .setTextureName(Reference.MOD_ID + ":eggcatagressiveentity.png");
+        CatAgressiveEntitySpawnEgg = catAgressiveEntitySpawnEgg;
+        GameRegistry.registerItem(CatAgressiveEntitySpawnEgg, "Cat Agressive Spawn Egg");
+
+        CatSpawnEgg catPassiveEntitySpawnEgg = new CatSpawnEgg(CatPassiveEntity.class);
+        catPassiveEntitySpawnEgg.setUnlocalizedName("cat_passive_spawn_egg")
+            .setCreativeTab(Catmod.catTab4)
+            .setTextureName(Reference.MOD_ID + ":eggcatpassiveentity.png");
+        CatPassiveEntitySpawnEgg = catPassiveEntitySpawnEgg;
+        GameRegistry.registerItem(CatPassiveEntitySpawnEgg, "Cat Passive Spawn Egg");
     }
 
     public static class WorldLoadHandler {

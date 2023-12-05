@@ -27,20 +27,13 @@ public class ClientProxy extends CommonProxy {
         RenderingRegistry.registerEntityRenderingHandler(
             CatPassiveEntity.class,
             new RenderCatPassiveEntity(new ModelCatPassiveEntity(), 0.5F));
-        RenderingRegistry.registerEntityRenderingHandler(EntityCatTnt.class, new RenderCatTnt());// tnt render not
-                                                                                                 // terminated or not
-                                                                                                 // fixed , i probably
-                                                                                                 // need to make a Model
-                                                                                                 // custom for the TNT
-                                                                                                 // to fix the red tnt
-                                                                                                 // model
+        RenderingRegistry.registerEntityRenderingHandler(EntityCatTnt.class, new RenderCatTnt());
     }
 
     @Override
     public void registerEntities() {
         // Register any client-only entities here/spawnegg/spawners
         entityID = EntityRegistry.findGlobalUniqueEntityId();
-        // todo make custom spawn eggs and change the tab to spawn tab
         EntityRegistry.registerGlobalEntityID(
             CatAgressiveEntity.class,
             "CatAgressiveEntity",

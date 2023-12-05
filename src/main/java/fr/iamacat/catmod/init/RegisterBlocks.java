@@ -18,7 +18,7 @@ import fr.iamacat.catmod.utils.Reference;
 public class RegisterBlocks {
 
     // blocks
-    public static Block catBlock, catTorch, catStairs, catFence, catTnt, catOre;
+    public static Block catBlock, catTorch, catStairs, catFence, catTnt, catOre, catPortalBlock;
 
     public static void init() {
         catBlock = new CatBlock(rock).setBlockName("catBlock")
@@ -38,6 +38,8 @@ public class RegisterBlocks {
             .setStepSound(Block.soundTypeGrass);
         // .setBlockTextureName(RefStrings.MODID + ":tnt")
         catFence = new CatFence(Reference.MOD_ID + ":catBlock", Material.rock).setBlockName("catFence")
+            .setCreativeTab(Catmod.catTab2);
+        catPortalBlock = new CatPortalBlock().setBlockName("catPortalBlock")
             .setCreativeTab(Catmod.catTab2);
     }
 
@@ -68,7 +70,10 @@ public class RegisterBlocks {
             catTnt,
             catTnt.getUnlocalizedName()
                 .substring(5));
-
+        GameRegistry.registerBlock(
+            catPortalBlock,
+            catPortalBlock.getUnlocalizedName()
+                .substring(5));
         // register recipes
         GameRegistry.addRecipe(new ItemStack(catBlock, 1), "OOO", "OOO", "OOO", 'O', catIngot);
         GameRegistry.addShapelessRecipe(new ItemStack(catTorch, 1), catStick, RegisterItems.catCoin);
@@ -82,16 +87,19 @@ public class RegisterBlocks {
             "OGO",
             "LWL",
             'L',
-            RegisterItems.catGunpowder, 'G',
-            Items.diamond, 'W',
-            RegisterBlocks.catBlock, 'O',
+            RegisterItems.catGunpowder,
+            'G',
+            Items.diamond,
+            'W',
+            RegisterBlocks.catBlock,
+            'O',
             Items.gunpowder);
         GameRegistry.addRecipe(
             new ItemStack(catStairs, 6), // 6 = number of blocks gived by the recipe
             "L  ",
-                    "LL ",
-                    "LLL",
-                    'L',
+            "LL ",
+            "LLL",
+            'L',
             RegisterBlocks.catBlock);
     }
 }
